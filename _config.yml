@@ -9,7 +9,7 @@ name: "@TwistoBackstage"
 description: Náhlédnutí do zákulisí vývoje Twisto.cz. Machine learning, scoring, big data a další buzz words included.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://pbs.twimg.com/profile_images/663723028203769863/6Xeulk_d.png
+avatar: /images/profile.png
 
 #
 # Flags below are optional
