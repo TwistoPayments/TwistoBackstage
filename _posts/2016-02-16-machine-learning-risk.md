@@ -48,10 +48,10 @@ Because *Openscoring* doesn't maintain deployed models after server restart – 
 
 # Conclusion
 
-Few words to summarize – suggested architecture allows us to separate responsibilities of our Risk and Development teams. It's easy now to get new ideas into production fast as it takes minimum effort to be deployed. We are now able to fully automate our development/deployment process and thus react on changing patterns in fraudster's behavior.
+Few words to summarize – suggested architecture allows us to separate responsibilities of our Risk and Development teams. It's easy now to get new ideas into production fast as it takes minimum effort to be deployed. We are now able to fully automate our development / deployment process and thus react on changing patterns in fraudster's behavior.
 
-On the other hand PMML is not "the Holy Grail" to solve all the problems – for example it is not able to cover all thinkable types of prediction models and/or all thinkable preprocessing tasks. As every standard it's just the greatest common divisor of the particular domain, but for us it is fair enough tradeoff to cover most of our requirements. It needs to be said that described architecture is related only to application scoring which is just a part of the compact engine that allows us to effectively deal with risk.
+On the other hand PMML is not "the Holy Grail" to solve all the problems – for example it is not able to cover all thinkable types of prediction models and/or all thinkable preprocessing tasks. As every standard it's just the greatest common divisor of the particular domain, but for us it is fair enough tradeoff to cover most of our requirements. It needs to be said that described architecture is related only to application scoring which is just a part of the complex engine ([meet Nikita](https://www.nikitaengine.com/)) that allows us to effectively deal with risk.
 
 We'll be happy to hear your opinions, experience, etc. about prediction model deployment phase.
 
-*- Václav Čadek, Twisto data scientist*
+*- Václav Čadek, Data Scientist at Twisto*
