@@ -16,11 +16,11 @@ Our former scoring infrastructure included hardcoded logit models that worked we
 - It wasn't possible to easily maintain multiple models at a time
 - It wasn't possible to maintain multiple types of ML models (e.g. Logit and Random Forests)
 
-As we are using Python as the "language of choice" to develop most of our infrastructure, betting on well known Python library called scikit-learn was a sure shot.
+As we are using Python as the "language of choice" to develop most of our infrastructure, betting on well known Python library called `scikit-learn` was a sure shot.
 
 # Scikit-Learn and Model Persistence 
 
-Although *scikit-learn* is a top quality library containing *state-of-the-art* algorithms for ML it doesn't allow much when it comes to deal with model persistence – even does not have such ambitions.
+Although `scikit-learn` is a top quality library containing *state-of-the-art* algorithms for ML it doesn't allow much when it comes to deal with model persistence – even does not have such ambitions.
 
 Literature is not going much deeper. Most of the time it is explaining *pickle* based solutions. To be honest such approach may be enough for examples in books, tutorials, etc. but definitely it's not robust enough for production level services. See detail explanation in excelent talk *Pickles are for Delis, not Software* by Alex Gaynor @ PyCon 2014 ([Talk on youtube](https://www.youtube.com/watch?v=7KnfGDajDQw)).
 
@@ -31,7 +31,7 @@ We could imagine a custom persistence solution based on SQL or non-SQL databases
 The Predictive Model Markup Language (PMML) is XML-based file format developed by the Data Mining Group to provide a way for applications to describe and exchange models produced by data mining and machine learning algorithms.
 
 ## Sklearn2pmml
-Is a Python library that provides a way how to persist a trained *scikit-learn* model into PMML.
+Is a Python library that provides a way how to persist a trained `scikit-learn` model into PMML.
 
 ## Openscoring
 Is RESTful web service that manage and interpret predictive models represented by PMML. Exposing predictive models through REST service is an elegant way how to provide interoperability and scalability of scoring engine.
@@ -44,7 +44,7 @@ Unlike guys at Airbnb we have no separate service for feature extraction – we 
 Because *Openscoring* doesn't maintain deployed models after server restart – there are two approaches of how to deal with this:
 
 - It may be possible to upload models into autodeploy folder which is then chosen during *Openscoring* server starts as argument.
-- Generated models are deployed using PUT to the proper endpoint from some file repository
+- Generated models are deployed using `HTTP PUT` to the proper endpoint from some file repository
 
 # Conclusion
 
