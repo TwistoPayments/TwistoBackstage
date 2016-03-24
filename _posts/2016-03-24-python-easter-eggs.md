@@ -6,6 +6,8 @@ title: Easter eggs v pythonu
 Velikonoce se nám blíží, vybrali jsme proto pár Easter eggů schovaných v pythonu. Vyzkoušejte si je. :-)
 
 <style>
+
+div.highlight { font-family: 'Consolas', 'Courier New'; }
 td.linenos { background-color: #f0f0f0; padding-right: 10px; }
 span.lineno { background-color: #f0f0f0; padding: 0 5px 0 5px; }
 pre { line-height: 125%; }
